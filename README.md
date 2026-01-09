@@ -66,7 +66,7 @@ This project strictly follows **Spec-Driven Development**:
 ---
 
 ## 📁 Project Structure
-hakathon_2_phase_1_todo_console_app/
+**hakathon_2_phase_1_todo_console_app/
 │
 ├── .claude/ # Claude Code configuration
 ├── .specify/ # Spec-Kit Plus memory
@@ -89,7 +89,7 @@ hakathon_2_phase_1_todo_console_app/
 │ └── task_service.py
 │
 ├── CLAUDE.md # Claude Code instructions
-└── README.md # Project documentation
+└── README.md # Project documentation**
 
 
 ---
@@ -136,3 +136,5 @@ python todo_app/main.py
 
 ###👩‍💻 Author
 **Humaira Osama**
+
+---
