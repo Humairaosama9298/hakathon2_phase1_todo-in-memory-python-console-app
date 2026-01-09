@@ -1,55 +1,66 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Todo Phase 1 – Project Constitution
+
+## Project Vision
+This project is a Phase 1 implementation of the "Evolution of Todo" hackathon.
+The goal is to build a clean, reliable, in-memory Python console-based Todo
+application using Spec-Driven Development with Claude Code and Spec-Kit Plus.
+
+The developer must act as a system architect, not a manual coder.
 
 ## Core Principles
+- No manual code writing is allowed
+- All code must be generated via Claude Code
+- Specs are the single source of truth
+- Code quality matters more than speed
+- Simplicity over complexity
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+## Technical Constraints
+- Language: Python 3.13+
+- Runtime: Console / CLI only
+- Storage: In-memory only (no database, no files)
+- External libraries are NOT allowed
+- Application must run via terminal
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+## Architectural Rules
+- Code must be modular and readable
+- Use classes for core domain logic
+- Separate concerns (models, services, CLI)
+- Each task must have a unique numeric ID
+- State must persist only during runtime
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+## Functional Scope (Phase 1 Only)
+The application must support exactly the following features:
+1. Add a task
+2. View all tasks
+3. Update a task
+4. Delete a task
+5. Mark task as complete or incomplete
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+No extra features are allowed in Phase 1.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## CLI Behavior Rules
+- Application must show a menu repeatedly until exit
+- User input errors must be handled gracefully
+- Clear messages must be shown for success/failure
+- Tasks must display completion status clearly
 
-### [PRINCIPLE_6_NAME]
+## Spec Compliance
+- Every feature must be backed by a specification file
+- Claude Code must strictly follow specs
+- If output is incorrect, specs must be refined
+- Specs take priority over implementation details
 
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Definition of Done
+Phase 1 is complete only if:
+- All 5 required features work correctly
+- Application runs without errors
+- Code structure follows the constitution
+- Specs and implementation are aligned
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+- This constitution supersedes all other practices
+- Amendments require documentation, approval, and migration plan
+- All PRs/reviews must verify compliance with these principles
+- Complexity must be justified with clear benefits
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-09 | **Last Amended**: 2026-01-09

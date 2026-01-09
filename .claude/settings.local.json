@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(git fetch --all --prune)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(python todo_app/main.py)",
+      "Bash(python -m todo_app.main)"
+    ]
+  }
+}
