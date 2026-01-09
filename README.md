@@ -124,7 +124,7 @@ python todo_app/main.py
 6. Exit
 ---
 
-###📜 Hackathon Compliance Checklist
+### 📜 Hackathon Compliance Checklist
 ✅**Spec-Driven Development used
 ✅  Constitution file present
 ✅  Specs history maintained
@@ -134,7 +134,7 @@ python todo_app/main.py
 
 ---
 
-###👩‍💻 Author
+### 👩‍💻 Author
 **Humaira Osama**
 
 ---
